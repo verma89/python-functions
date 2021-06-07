@@ -17,7 +17,12 @@ Learn how to unpack the iterables.
 
 #### 6. Varialbe number of positional and keyword-only arguments
 
-#### 
+## 1. Arguments and Parameters
+**Parameters** are the **local variables in a function** which are **written inside the paranthesis** while defining any function.
+
+**Arguments** are the **values which are passed to the functions** when it is called.
+
+In python, arguments are **passed by reference**. Technically the **memory address** of arguments are passed. 
 
 
 
