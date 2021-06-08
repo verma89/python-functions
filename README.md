@@ -37,6 +37,22 @@ Now let's **call my_func in two ways** as mentioned below:
 
 **Hence these are the positional arguments, where with the change in the position of the arguments the value of the parameters changes.**
 
+**Default Values:**
+
+A positional argument can be made **optional** by specifying a **default value for corresponding parameter**.
+
+```python
+def my_func(a, b=100):
+  #code
+```
+
+The above function **my_func(a, b=100)** can be called by passing only one argument also, as shown below:
+
+1. my_func(50) **#argument 50 will be assigned to parameter a and b will be assigned with default value 100. **
+2. my_func(50,150) **#argument 50 will be assigned to parameter a and argument 150 will be assigned to parameter b. **
+3. my_func() **#This way of calling will throw exception as the function is having one possitional parameter for which passing one argument is mandatory. Hence this is wrong way of calling above function**
+
+
 
 
 
