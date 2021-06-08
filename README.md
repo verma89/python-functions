@@ -128,3 +128,19 @@ In both the above case we tried to put possitional argument after keyword arguem
 3. my_func(3, b = 1, c = 2) # this is a valid call. Keyword argument followed by keyword arguments.
 4. my_func(3, c = 2, b = 1) #As the position doesnot matter for keyword argument thus it will work equally in the same way.
 
+## 4. Unpacking Iterables:
+****Prior to this lets revisit the basics of tuple.****
+
+1. In python tuple is defined by **,** and not **()**. **()** is used to make tuple clearer.
+
+**Example: **
+
+1,2,3 and (1,2,3) both are a valid tuple. **() is optional in (1,2,3)**
+
+2. To create a tuple with single element use **,** with element.
+
+**Example:**
+
+1, or (1, ) is a valid syntax to create tuple with single element. However (1) will not create a tuple with single element rather it will create an integer data.
+
+3. To create an empty tupel you can use **()** (it's exception) or you may use **tuple()**
