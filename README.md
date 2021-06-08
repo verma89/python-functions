@@ -146,3 +146,12 @@ In both the above case we tried to put possitional argument after keyword arguem
 1, or (1, ) is a valid syntax to create tuple with single element. However (1) will not create a tuple with single element rather it will create an integer data.
 
 3. To create an empty tupel you can use **()** (it's exception) or you may use **tuple()**
+
+****>> What is Packed Values?****
+
+Values that are bundled in some way are said to be Packed Values.
+
+**Example:**
+
+List [1,2,3], Tuples (1,2,3), String ("python3"), Sets {1,2,3} and Dictionaries {'a':1, 'b':2, 'c':3}. Hence we can say that any iterables are packed values.
+
