@@ -17,7 +17,7 @@ In python, arguments are **passed by reference**. Technically the **memory addre
 
 ## 2. Positional and Keyword-only arguments
 
-**Positional Arguments:**
+****Positional Arguments:****
 
 This is the most **common way of assigning arguments to parameters**: **via order** in which they are passed i.e. **their position**.
 
@@ -37,7 +37,7 @@ Now let's **call my_func in two ways** as mentioned below:
 
 **Hence these are the positional arguments, where with the change in the position of the arguments the value of the parameters changes.**
 
-**Default Values:**
+****Default Values:****
 
 A positional argument can be made **optional** by specifying a **default value for corresponding parameter**.
 
@@ -84,8 +84,47 @@ Now function **my_func(a, b=10, c=20)** can be called in follwing ways:
 3. my_func(5, 3, 2) **#argument 5, 3, 2 will be assigned to parameters a, b, c respectively.**
 4. my_func() **#This way of calling will throw exception as parameter a expects one positional argument to be passed.**
 
+****Keyword argument:****
 
-Now another case is i want to specify the 1st and 3rd arguments but ommit the second argument. i.e. i want to specify values for parameters a and c but let b take on it default value.
+Now **another case** if i want to **specify the 1st and 3rd arguments but ommit the second argument**. i.e. i want to specify values for parameters a and c but let b take on it default value.
+
+This case can be** achieved using keyword argument**. Using keyword argument positional argument can, optionally, be specified by using the parameter name, whether or not the parameter have default value.
+
+**Let us consider a function having defaut values to its parameters:**
+
+```python
+def my_func(a, b=10, c=30):
+  #code
+```
+
+The above function can be called in following ways using keyword arguments
+1. my_func(a=1, c=3)
+2. my_func(c=3, a=1)
+3. my_func(1, c=3)
 
 
+**Let us consider a function having all positional parameters:**
+
+```python
+def my_func(a, b, c):
+  #code
+```
+
+The above function can be called in following ways using keyword arguments
+1. my_func(1, 2, 3)
+2. my_func(1, 2, c = 3)
+3. my_func(a = 1, b = 2, c = 3)
+4. my_func(a = 1, c = 3, b = 2)
+
+NOTE: Once you use a named argument, all the arguments thereafter should be named too.
+
+**Example:**
+
+1. my_func(c = 3, 1, 2) #looking into this call value 3 can be assigned to parameter c, after that there will be confusion if values 1 and 2 should be assigned to parameters  b or c, c or b. hence causing exception. Thus not a valid syntax.
+2. my_func(3, b = 1, 2) 
+
+In both the above case we tried to put possitional argument after keyword arguemnt, which is inavlid syntax. Hence exception will be thrown.
+
+3. my_func(3, b = 1, c = 2) # this is a valid call. Keyword argument followed by keyword arguments.
+4. my_func(3, c = 2, b = 1) #As the position doesnot matter for keyword argument thus it will work equally in the same way.
 
