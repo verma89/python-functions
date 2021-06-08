@@ -133,7 +133,7 @@ In both the above case we tried to put possitional argument after keyword arguem
 
 1. In python tuple is defined by **,** and not **()**. **()** is used to make tuple clearer.
 
-**Example: **
+**Example:**
 
 1,2,3 and (1,2,3) both are a valid tuple. **() is optional in (1,2,3)**
 
