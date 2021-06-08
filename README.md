@@ -16,6 +16,9 @@ This repository will have the python function concepts and programs to implement
 In python, arguments are **passed by reference**. Technically the **memory address** of arguments are passed. 
 
 ## 2. Positional and Keyword-only arguments
+
+**Positional Arguments:**
+
 This is the most **common way of assigning arguments to parameters**: **via order** in which they are passed i.e. **their position**.
 
 **Example:** 
