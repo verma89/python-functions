@@ -52,7 +52,40 @@ The above function **my_func(a, b=100)** can be called by passing only one argum
 2. my_func(50,150) **#argument 50 will be assigned to parameter a and argument 150 will be assigned to parameter b. **
 3. my_func() **#This way of calling will throw exception as the function is having one possitional parameter for which passing one argument is mandatory. Hence this is wrong way of calling above function**
 
+**Making one positional argument optional out of three:**
 
+Let us consider below function:
+
+```python
+def my_func(a, b=10, c):
+  #code
+```
+
+How to call function **my_func(a, b=10, c)** without specifying value for the second parameter?
+1. my_func(5,2) # If called in this way, **argument 5** will be **passed to parameter a** and **argument 2** will be **passed to parameter b** and not to parameter c which will result in exception.
+
+Hence defining function in this way in the present example is not right neither the calling is right. 
+
+**There is a rule for defining a positional parameter:**
+
+If a Positional Parameter is defined with a defult value, then every positional parameter after it must be given a default value.
+
+Therefore the valid function definition for the above case or scenario will be:
+
+
+```python
+def my_func(a, b=10, c=20):
+  #code
+```
+
+Now function **my_func(a, b=10, c=20)** can be called in follwing ways:
+1. my_func(5) **#argument 5 will be assigned to parameter a. Parameters b and c will be assigned with their respective default values i.e. 10, 20**
+2. my_func(5, 3) **#argument 5 and 3 will be assigned to parameters a, b respectively. Parameter c will be assigned with default value 20**
+3. my_func(5, 3, 2) **#argument 5, 3, 2 will be assigned to parameters a, b, c respectively.**
+4. my_func() **#This way of calling will throw exception as parameter a expects one positional argument to be passed.**
+
+
+Now another case is i want to specify the 1st and 3rd arguments but ommit the second argument. i.e. i want to specify values for parameters a and c but let b take on it default value.
 
 
 
