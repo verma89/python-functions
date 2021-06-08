@@ -66,7 +66,7 @@ How to call function **my_func(a, b=10, c)** without specifying value for the se
 
 Hence defining function in this way in the present example is not right neither the calling is right. 
 
-**There is a rule for defining a positional parameter:**
+**Rules for defining a default value for positional arguments:**
 
 If a Positional Parameter is defined with a defult value, then every positional parameter after it must be given a default value.
 
