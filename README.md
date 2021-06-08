@@ -129,7 +129,8 @@ In both the above case we tried to put possitional argument after keyword arguem
 4. my_func(3, c = 2, b = 1) #As the position doesnot matter for keyword argument thus it will work equally in the same way.
 
 ## 4. Unpacking Iterables:
-****##Prior to this lets revisit the basics of tuple.****
+****Prior to this lets understand:****
+****>>Basics Of Tuple:****
 
 1. In python tuple is defined by **,** and not **()**. **()** is used to make tuple clearer.
 
